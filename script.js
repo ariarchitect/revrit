@@ -45,8 +45,8 @@ input.addEventListener('change', () => {
     reader.onload = (e) => { 
         const file = e.target.result; 
         const lines = file.split(/\r\n|\n/); 
-        RevitRusShortcuts = lines.join('\n').replace(/Shortcuts="[^"]*"/g, revrit)
-        download("RevitRusShortcuts.xml",RevitRusShortcuts);
+        RevitShortcutsHebrew = lines.join('\n').replace(/Shortcuts="[^"]*"/g, revrit)
+        download("RevitShortcutsHebrew.xml",RevitShortcutsHebrew);
     }; 
     reader.onerror = (e) => alert(e.target.error.name); 
     reader.readAsText(file); 
